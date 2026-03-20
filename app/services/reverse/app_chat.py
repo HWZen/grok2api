@@ -109,9 +109,6 @@ class AppChatReverse:
         if request_overrides:
             payload.update({k: v for k, v in request_overrides.items() if v is not None})
 
-        import json
-        logger.debug(f"AppChatReverse payload: {json.dumps(payload, indent=4, ensure_ascii=False)}")
-
         return payload
 
     @staticmethod
